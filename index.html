@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Practice-3</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body style="color: purple;">
+
+    <!-- Frames -->
+    <iframe src="./pic/index2.html" frameborder="0"></iframe>
+
+    <!-- --- -->
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus explicabo repudiandae sit dignissimos excepturi fugiat nihil exercitationem molestiae adipisci quibusdam! Temporibus expedita earum cum sunt accusantium voluptatem possimus rerum hic!</p>
+    <p style="color: purple;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores nemo error nesciunt enim in, rerum quisquam itaque ab est voluptatibus magnam magni, similique optio. Porro corrupti quos neque consequuntur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatibus soluta nemo expedita ipsa explicabo recusandae temporibus natus doloremque vitae quaerat, cum quod laudantium aliquid eum? Qui corporis dolor eum?</p>
+    <ul>
+        <li><span>i</span>te<span class="green">m</span> 1</li>
+        <li id="normal-font" class="bold"><span>i</span>te<span class="green">m</span> 2</li>
+        <li><span>i</span>te<span class="green">m</span> 3</li>
+        <li><span>i</span>te<span class="green">m</span> 4</li>
+        <li><span>i</span>te<span class="green">m</span> 5</li>
+    </ul>
+
+    <!-- a*4>{<span>i</span>te<span class="green">m</span> $} -->
+    <!-- table>tr*5>td*4>{$} -->
+    <!-- table[border="1"]> -->
+    <!-- a[href="#"]*4 -->
+
+    <!-- a[href="#"]*4>{<span>i</span>te<span class="green">m</span> $} -->
+
+    <a href="#" title="some title">link 1</a>
+    <a href="#" title="foo">link 2</a>
+    <a href="#">link 3</a>
+    <a href="#" class="black bold">link 4</a>
+
+    <p style="font-size: 11px;" class="large-font">large text here</p>
+    <p id="small-text" class="large-font">large text here</p>
+
+    <!-- <div>
+        Контейнер, блочный элемент, он растягивается на всю доступную ширину страницы. 
+        Но по высоте он будет 0, если к нему мы не применили никакие стили, которые модифицируют как-то его высоту, 
+        или внутри него ничего нет.
+        По умолчанию высота его зависит от размера содержимого.
+    </div>
+    <span>
+        Строчный элемент. В него мы можем оборачивать какое-то слово или несколько слов.
+    </span>
+    Нужны для стилей. -->
+
+    <div>
+        <p>Lorem, ipsum <span>dolor sit amet</span> consectetur adipisicing elit. Debitis assumenda quia minima, esse earum maxime qui dignissimos! Nostrum architecto aperiam laborum eligendi amet officiis delectus, at provident a, modi consequuntur.</p>
+        <p>Voluptatibus dolorum animi molestiae error mollitia architecto deserunt corrupti ab eum, optio incidunt doloremque repellat. Consequuntur asperiores maiores assumenda quas provident quae atque dolores doloribus, nostrum est, suscipit culpa cumque.</p>
+        <p>Ex in doloremque facere ea accusantium repudiandae eligendi dolores reprehenderit tempore nemo nulla quibusdam deserunt, consequuntur facilis rem temporibus, animi magnam porro inventore doloribus dignissimos pariatur explicabo culpa. Nesciunt, explicabo?</p>
+    </div>
+    <!-- --- -->
+    <div class="my-container">Practice#1
+        <ul>
+            <li><span>i</span>te<span class="green">m</span></li>
+            <li><span>i</span>te<span class="green">m</span></li>
+            <li><span>i</span>te<span class="green">m</span></li>
+            <li><span>i</span>te<span class="green">m</span></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore recusandae vel neque dolorem aut dolorum perspiciatis quidem, ducimus placeat voluptate illo aperiam! Ratione asperiores dolorum aut blanditiis sunt laboriosam.</p>
+    </div>
+
+    <div class="block">A</div>
+
+    <p>
+        <a href="">My link</a>
+    </p>
+    <!-- --- -->
+    <!-- div>p{text}*3>a[href="#"] -->
+    <div>Practice#2
+        <p class="black">text<a href="./pic/index2.html">link</a></p>
+        <p class="black">text<a href="./pic/index2.html">link</a></p>
+        <p class="black">text<a href="./pic/index2.html">link</a></p>
+        <span class="text">text</span>
+    </div>
+
+    <!-- table>tr*2>td{$}*4 -->
+    <table class="my-table" cellspacing="20px" cellpading="20px">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <!-- ul>li[class="li-style"]{item $}*5 -->
+    <ul class="container">
+        <li class="li-style">item 1</li>
+        <li class="li-style">item 2</li>
+        <li class="li-style">item 3</li>
+        <li class="li-style">item 4</li>
+        <li class="li-style">item 5</li>
+    </ul>
+</body>
+</html>

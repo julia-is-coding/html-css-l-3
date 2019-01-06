@@ -1,0 +1,201 @@
+/* Css
+
+    1. Internal - Глобальные
+    2. External - Внешние/Связанные
+    3. Inline - Встроенные
+
+    Css-правило:
+    selector {
+        property: value
+        property2: value
+        property3: value
+    }
+
+    Базовые селекторы:
+    * - универсальный селектор;
+    p - селекторы по тегу (элементу);
+    [title] - селекторы по атрибуту;
+    .article - селекторы по атрибуту class;
+    #main - селектор по атрибуту id.
+
+    Группировка:
+    p, h1, .main-text - стили применяются ко всем селекторам через запятую.
+
+    Контекстные селекторы:
+    div a - стили применяются только к ссылкам внутри тега div.
+
+    Важность селекторов:
+    - !important (перезаписывается другим !important);
+    - inline - встроенные стили в аттрибуте style (которые написали прямо в теге);
+    - #id (нельзя дублировать!)ж
+    - .class или [attr];
+    - tag
+
+    Равноправные селекторы перезаписываются по мере написания.
+
+    Стили могут быть собственными и унаследованными.
+    В приоритете всегда будут собственные! */
+
+* {
+    color: tan;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* li {
+    font-size: 12px !important;
+    color: black;
+} */
+
+li {
+    font-size: 12px;
+    color: black;
+}
+
+[title] {
+    font-weight: bold;
+    color: pink;
+}
+
+[title="foo"] {
+    font-weight: 300;
+    color: red;
+}
+
+.bold {
+    font-weight: 700; /* == bold */
+    
+}
+
+#normal-font {
+    font-weight: 400;
+}
+
+.large-font {
+    /* font-size: 50px !important; */
+    font-size: 50px;
+}
+
+/* p {
+    font-size: 12px;
+} */
+
+/* [class] {
+    font-size: 12px;
+} */
+
+#small-text {
+    font-size: 12px;
+}
+
+div p {
+    color: blueviolet;
+}
+
+div span {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+li span {
+    font-weight: bold;
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+div ul li {
+    font-size: 20px;
+    color: magenta;
+}
+
+div .black {
+    font-size: 16px;
+    color: black;
+}
+
+p a {
+    color: green;
+    text-decoration: none;
+    /* text-align: center; */
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+}
+
+div p {
+    text-align: center;
+}
+
+.text {
+    color: blue;
+    font-size: 20px;
+}
+
+/* body {
+    color: orange; наследование
+} */
+
+body {
+    background-color: grey;
+    background-color: rgb(143, 89, 89);
+    background-color: rgb(245, 215, 225);
+    background-color: #c0c0c0;
+
+    /* https://www.w3schools.com/css/css_font.asp */
+    font-family: Verdana;
+    font-family: Monospace;
+    font-style: italic;
+}
+.my-container {
+    background-color: mistyrose;
+    /* width: 400px; */
+    width: 300px;
+    height: 400px;
+    /* margin: расстояние между элементами
+    paddong: */
+}
+
+.block {
+    background-color: purple;
+    width: 50px;
+    height: 50px;
+
+    padding: 20px;
+
+    margin-bottom: 50px;
+
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.my-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* tr td {
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+} */
+
+.my-table td {
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+}
+
+.container {
+    width: 300px;
+}
+
+.li-style {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
